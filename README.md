@@ -45,28 +45,6 @@ Advanced-ToDo-App/
 └── README.md
 ```
 
----
-
-## Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/advanced-todo-app.git
-```
-
-### 2. Open the project folder
-
-```bash
-cd advanced-todo-app
-```
-
-### 3. Run the application
-
-Open **index.html** in your preferred web browser.
-
-No additional installation or dependencies are required.
-
 ## How It Works
 
 1. Enter a task title.
