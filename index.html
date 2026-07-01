@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1><i class="fa-solid fa-list-check"></i>To-Do App</h1>
+
+        <button id="themeBtn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </header>
+
+    <!-- Statistics -->
+    <div class="stats">
+
+        <div class="card">
+            <h3>Total</h3>
+            <p id="totalTasks">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Completed</h3>
+            <p id="completedTasks">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Pending</h3>
+            <p id="pendingTasks">0</p>
+        </div>
+
+    </div>
+
+    <!-- Progress -->
+    <div class="progress-container">
+        <label>Progress</label>
+
+        <progress id="progressBar"
+        value="0"
+        max="100"></progress>
+
+        <span id="progressText">0%</span>
+    </div>
+
+    <!-- Search -->
+    <input
+    type="text"
+    id="searchInput"
+    placeholder="🔍 Search task">
+
+    <!-- Add Task -->
+
+    <div class="task-form">
+
+        <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter Task">
+
+        <textarea
+        id="description"
+        placeholder="Task Description"></textarea>
+
+        <input
+        type="date"
+        id="taskDate">
+
+        <input
+        type="time"
+        id="taskTime">
+
+        <!-- Priority -->
+
+        <select id="priority">
+
+            <option value="Low">
+                Low Priority
+            </option>
+
+            <option value="Medium">
+                Medium Priority
+            </option>
+
+            <option value="High">
+                High Priority
+            </option>
+
+        </select>
+
+        <!-- Category -->
+
+        <select id="category">
+
+            <option value="Personal">
+                Personal
+            </option>
+
+            <option value="Work">
+                Work
+            </option>
+
+            <option value="Study">
+                Study
+            </option>
+
+            <option value="Shopping">
+                Shopping
+            </option>
+
+        </select>
+
+        <button id="addTaskBtn">
+            <i class="fa-solid fa-plus"></i>
+            Add Task
+        </button>
+
+    </div>
+
+    <!-- Filter -->
+
+    <div class="filters">
+
+        <button class="filter-btn"
+        data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn"
+        data-filter="completed">
+            Completed
+        </button>
+
+        <button class="filter-btn"
+        data-filter="pending">
+            Pending
+        </button>
+
+    </div>
+
+    <!-- Task List -->
+
+    <ul id="taskList">
+
+    </ul>
+
+    <!-- Bottom Buttons -->
+
+    <div class="bottom-buttons">
+
+        <button id="clearCompleted">
+            <i class="fa-solid fa-trash"></i>
+            Clear Completed
+        </button>
+
+        <button id="clearAll">
+            <i class="fa-solid fa-trash-can"></i>
+            Clear All
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
